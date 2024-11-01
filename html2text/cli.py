@@ -239,6 +239,13 @@ def main() -> None:
         help="Mark program code blocks with [code]...[/code]",
     )
     p.add_argument(
+        "--backquote-code-style",
+        action="store_true",
+        dest="tri-backquote code style",
+        default=config.BACKQUOTE_CODE_STYLE,
+        help="Multi line code block using tri-backquote style",
+    )
+    p.add_argument(
         "--decode-errors",
         dest="decode_errors",
         default=config.DECODE_ERRORS,
